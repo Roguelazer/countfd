@@ -9,7 +9,7 @@
 
 
 void usage() {
-    fprintf(stderr, "Usage: countfds PID\n");
+    fprintf(stderr, "Usage: countfd PID\n");
     exit(2);
 }
 
