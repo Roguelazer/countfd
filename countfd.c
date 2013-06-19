@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
     if (endptr[0] != '\0') {
         usage();
     }
-    
+
     if (snprintf(pathbuf, PATH_MAX, "/proc/%d/fd", pid) < 0) {
         fprintf(stderr, "Something went wrong constructing path buffer: %s", strerror(errno));
         return 1;
